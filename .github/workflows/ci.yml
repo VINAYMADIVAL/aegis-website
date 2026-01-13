@@ -11,10 +11,6 @@ jobs:
     name: Frontend CI
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./client
-
     strategy:
       matrix:
         node-version: [18.x, 20.x]
@@ -28,26 +24,21 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-          cache-dependency-path: client/package-lock.json
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install frontend dependencies
+        run: npm ci -w client
 
-      - name: Lint
-        run: npm run lint
+      - name: Lint frontend
+        run: npm run lint -w client
         continue-on-error: true
 
       - name: Build frontend
-        run: npm run build
+        run: npm run build -w client
 
   backend:
     name: Backend CI 
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ./server
-
     strategy:
       matrix:
         node-version: [18.x, 20.x]
@@ -61,14 +52,18 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
-          cache-dependency-path: server/package-lock.json
 
-      - name: Install dependencies
-        run: npm ci
+      # - name: Install system dependencies (ODBC)
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y unixodbc unixodbc-dev
 
-      - name: Lint
-        run: npm run lint
+      - name: Install backend dependencies
+        run: npm ci -w server
+
+      - name: Lint backend
+        run: npm run lint -w server
         continue-on-error: true
 
-      - name: Build backend 
-        run: npm run build
+      - name: Build backend
+        run: npm run build -w server
