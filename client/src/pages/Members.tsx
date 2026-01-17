@@ -90,7 +90,7 @@ const Members = () => {
           {["present", "alumni"].map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveTab(tab as any)}
+              onClick={() => setActiveTab(tab as "present" | "alumni")}
               className={`px-6 py-2 rounded-full text-sm font-medium transition ${
                 activeTab === tab
                   ? "bg-white text-black"
