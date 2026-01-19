@@ -28,6 +28,7 @@ export const members: Member[] = [
     id: 1,
     name: "Vinay Madival",
     position: "Tech Lead, Aegis",
+    year: "4th",
     imageUrl: "/members/vinay_madival.png",
     resumeUrl:
       "https://drive.google.com/file/d/10yBuR0mhTRiZ46y4Or7z7vXzBtYPz8Tb/view?usp=sharing",
@@ -42,6 +43,7 @@ export const members: Member[] = [
     id: 2,
     name: "Vinay Madival",
     position: "Tech Co-Lead, Aegis",
+    year: "3rd",
     imageUrl: "/members/vinay_madival.png",
     resumeUrl:
       "https://drive.google.com/file/d/10yBuR0mhTRiZ46y4Or7z7vXzBtYPz8Tb/view?usp=drive_link",
@@ -55,6 +57,7 @@ export const members: Member[] = [
     id: 3,
     name: "Vinay Madival",
     position: "Tech Member, Aegis",
+    year: "2nd",
     imageUrl: "/members/vinay_madival.png",
     resumeUrl: undefined,
     socialLinks: {
@@ -67,6 +70,7 @@ export const members: Member[] = [
     id: 4,
     name: "Vinay Madival",
     position: "Tech Member, Aegis",
+    year: "2nd",
     imageUrl: "/members/vinay_madival.png",
     resumeUrl:
       "https://drive.google.com/file/d/10yBuR0mhTRiZ46y4Or7z7vXzBtYPz8Tb/view?usp=drive_link",
@@ -80,6 +84,7 @@ export const members: Member[] = [
     id: 5,
     name: "Vinay Madival",
     position: "Tech Member, Aegis",
+    year: "2nd",
     imageUrl: "/members/vinay_madival.png",
     resumeUrl:
       "https://drive.google.com/file/d/10yBuR0mhTRiZ46y4Or7z7vXzBtYPz8Tb/view?usp=drive_link",
@@ -93,6 +98,7 @@ export const members: Member[] = [
     id: 6,
     name: "Vinay Madival",
     position: "Tech Member, Aegis",
+    year: "2nd",
     imageUrl: "/members/vinay_madival.png",
     resumeUrl:
       "https://drive.google.com/file/d/10yBuR0mhTRiZ46y4Or7z7vXzBtYPz8Tb/view?usp=drive_link",
@@ -106,6 +112,7 @@ export const members: Member[] = [
     id: 7,
     name: "Vinay Madival",
     position: "Tech Member, Aegis",
+    year: "2nd",
     imageUrl: "/members/vinay_madival.png",
     resumeUrl:
       "https://drive.google.com/file/d/10yBuR0mhTRiZ46y4Or7z7vXzBtYPz8Tb/view?usp=drive_link",
