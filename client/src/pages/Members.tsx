@@ -85,8 +85,8 @@ const Members = () => {
                     px-6 py-2.5 rounded-full font-medium transition-all duration-300
                     ${
                       activeFilter === filter
-                        ? "bg-blue-500 text-white shadow-lg shadow-blue-500/50"
-                        : "bg-zinc-800 text-gray-300 hover:bg-zinc-700 hover:text-white"
+                        ? "bg-emerald-500 text-zinc-900 shadow-lg shadow-emerald-500/40 cursor-default"
+                        : "bg-zinc-800 text-zinc-300 hover:bg-zinc-700 hover:text-white hover:shadow-md hover:shadow-zinc-500/20"
                     }
                   `}
                 >
